@@ -184,6 +184,40 @@
         margin: 20px;
     }
 
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Para centrar el texto */
+
+        background-image: url(imgs/bg.jpg);
+
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .mapaContenido {
+        width: 70%;
+
+        padding-top: 2%;
+    }
+
+    .tituloMapa {
+        text-transform: uppercase; /* Convierte el texto a mayúsculas */
+        font-weight: bold;
+        color: rgb(184, 181, 181);
+
+        font-family: 'Noto Sans', serif;
+    }
+
+    .mapa p{
+        color: rgb(184, 181, 181);
+        font-weight: bold;
+
+        font-family: 'Noto Sans', serif;
+    }
+    
+
     /* ------------------------ FIN COPYPASTE DESVERGONZADO ------------------------------- */
     
 
@@ -321,6 +355,39 @@
 
     .texto p{
         text-align: center;
+    }
+
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Para centrar el texto */
+
+        background-image: url(imgs/bg.jpg);
+
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .mapaContenido {
+        width: 100%;
+
+        padding-top: 2%;
+    }
+
+    .tituloMapa {
+        text-transform: uppercase; /* Convierte el texto a mayúsculas */
+        font-weight: bold;
+        color: rgb(184, 181, 181);
+
+        font-family: 'Noto Sans', serif;
+    }
+
+    .mapa p{
+        color: rgb(184, 181, 181);
+        font-weight: bold;
+
+        font-family: 'Noto Sans', serif;
     }
 
     footer{
