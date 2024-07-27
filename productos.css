@@ -113,9 +113,12 @@
         box-sizing: border-box;
         border: 2px solid #000000;
         border-radius: 15px;
+
+        margin-top: 40px;
     
         /* background-color: #BBBBBB; */
     }
+
     
     .productos li:hover {
         border-color: #C78C19;
@@ -133,6 +136,12 @@
     
     .productos li:hover h2{
         font-size: 33px;
+    }
+
+    .imagenProducto{
+
+        max-width: 100%;
+
     }
     
     .descripcion {
@@ -164,64 +173,128 @@
 
 @media (max-width: 767px){
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden; /* Esto previene el scroll horizontal */
+    }
+    
+
     header {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos dentro del header en una columna */
+        align-items: center;
         background-color: #BBBBBB;
-        padding: 20px 0;
+        height: 385px;
+        padding-top: 58px;
+
     }
     
-    nav {
-        position: absolute;
-        top: 110px;
-        right: 0px;
+    .header-top {
+        display: flex;
+        justify-content: space-around;
+        /* Asegura espacio entre el logo y la barra de navegación */
+        align-items: center;
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        padding: 10px 0px 10px 0px;
+        /* Añade algo de espacio alrededor del contenido */
+        /* margin-right: 30px;
+        margin-left: 0px; */
     }
     
-    nav li {
-        display: inline-block;
-        margin: 0 0 0 15px;
+    .logo img {
+        max-width: 100%; /* Asegura que la imagen no se desborde */
     }
     
+    .barra-nav {
+        text-align: center; /* Centra el contenido del nav */
+    }
     
-    nav a{
+    .lista-nav {
+        display: flex; 
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        list-style: none; 
+        padding: 0; 
+        justify-content: center; /* Centra los elementos de la lista */
+    }
+    
+    .lista-nav li {
+        margin-bottom: 10px; /* Añade espacio entre los elementos de la lista */
         text-transform: uppercase;
-        color: #000000;
         font-weight: bold;
-        font-size: 22px;
+    }
+    
+    .lista-nav li:last-child {
+        margin-bottom: 0; /* Elimina el margen inferior del último elemento */
+    }
+    
+    .lista-nav li:hover {
+        color: #C78C19;
+    }
+    
+    /* ---------- EXPERIMENTO ENLACES ---------------- */
+    
+    .lista-nav a {
+        color: #000000;
         text-decoration: none;
     }
     
-    nav a:hover {
+    .lista-nav a:hover {
         color: #C78C19;
-        text-decoration: underline;
     }
     
-    
-    .caja {
-        position: relative;
-        /* width: 940px; */
-        width: 70%;
-        margin: 0 auto;
+    .titulo {
+        background-color: #BBBBBB;
+        text-align: center;
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        /* padding: 20px 0; */
+        /* Añade espacio vertical alrededor del título */
+        /* height: 55px; */
     }
     
+    .tituloTexto {
+        font-size: xx-large;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Protest Strike', serif;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        margin-top: 70px;
+    }
     
+
+    /*  */
+
     .productos {
         width: 70%;
         margin: 0 auto;
         padding: 50px;
+        display: flex; /* Cambia el contenedor a un contenedor flex */
+        flex-direction: column; /* Alinea los elementos en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
     }
     
     .productos li {
-        display: inline-block;
+        display: block; /* Cambia cada elemento a bloque */
         text-align: center;
-        width: 30%;
-        vertical-align: top;
-        margin: 0 1.5%;
+        width: 100%; /* Asegura que cada elemento ocupe todo el ancho disponible */
+        /* vertical-align: top; */
+        margin: 20px 0; /* Añade espacio entre los elementos */
         padding: 30px 20px;
         box-sizing: border-box;
         border: 2px solid #000000;
         border-radius: 15px;
-    
-        /* background-color: #BBBBBB; */
+
+        margin-top: 40px;
     }
+
     
     .productos li:hover {
         border-color: #C78C19;
@@ -234,11 +307,16 @@
     .productos h2 {
         font-size: 30px;
         font-weight: bold;
-        /* box-sizing: border-box; */
     }
     
-    .productos li:hover h2{
+    .productos li:hover h2 {
         font-size: 33px;
+    }
+
+    .imagenProducto{
+
+        max-width: 100%;
+
     }
     
     .descripcion {
@@ -250,6 +328,10 @@
         font-weight: bold;
         margin-top: 10px;
     }
+    
+
+    /*  */
+    
     
     footer {
         text-align: center;

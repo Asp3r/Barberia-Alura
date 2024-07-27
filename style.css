@@ -241,6 +241,10 @@
     .barra-nav{
         text-align: center;
     }
+    
+    .lista-nav{
+        list-style: none;
+    }
 
     .lista-nav li {
         margin-bottom: 10%;
@@ -250,6 +254,11 @@
 
     .lista-nav li:hover {
         color: #C78C19;
+    }
+
+    .lista-nav a {
+        color: #000000;
+        text-decoration: none;
     }
 
     .titulo{
