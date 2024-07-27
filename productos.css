@@ -6,6 +6,165 @@
 @media (min-width: 768px){
 
     header {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos dentro del header en una columna */
+        align-items: center;
+        background-color: #BBBBBB;
+
+        height: 385px;
+
+        padding-top: 58px;
+    }
+    
+    .header-top {
+        display: flex;
+        justify-content: space-around; /* Asegura espacio entre el logo y la barra de navegación */
+        align-items: center;
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        padding: 10px 20px 10px 20px;
+        /* Añade algo de espacio alrededor del contenido */
+        /* margin-right: 30px;
+        margin-left: 0px; */
+
+    }
+    
+    .logo img {
+        max-width: 100%; /* Asegura que la imagen no se desborde */
+    }
+    
+    .barra-nav {
+        text-align: center; /* Centra el contenido del nav */
+    }
+    
+    .lista-nav {
+        display: flex; 
+        list-style: none; 
+        padding: 0; 
+        justify-content: center; /* Centra los elementos de la lista */
+    }
+    
+    .lista-nav li {
+        margin-right: 20px; 
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    
+    
+    .lista-nav li:hover {
+        color: #C78C19;
+    }
+    
+    /* ---------- EXPERIMENTO ENLACES ---------------- */
+    
+    .lista-nav a {
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    .lista-nav a:hover {
+        color: #C78C19;
+    }
+    
+    .titulo {
+        background-color: #BBBBBB;
+        text-align: center;
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        /* padding: 20px 0;  */
+        /* Añade espacio vertical alrededor del título */
+
+        /* height: 55px; */
+        
+        
+    }
+    
+    .tituloTexto {
+        font-size: xx-large;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Protest Strike', serif;
+        letter-spacing: 2px;
+
+        margin-bottom: 15px;
+        margin-top: 70px;
+
+    }
+    
+    
+    
+    main{
+        margin-top: 0;
+    }
+    
+    
+    .productos {
+        width: 70%;
+        margin: 0 auto;
+        padding: 50px;
+    }
+    
+    .productos li {
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        vertical-align: top;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 15px;
+    
+        /* background-color: #BBBBBB; */
+    }
+    
+    .productos li:hover {
+        border-color: #C78C19;
+    }
+    
+    .productos li:active {
+        border-color: #088c19;
+    }
+    
+    .productos h2 {
+        font-size: 30px;
+        font-weight: bold;
+        /* box-sizing: border-box; */
+    }
+    
+    .productos li:hover h2{
+        font-size: 33px;
+    }
+    
+    .descripcion {
+        font-size: 18px;
+    }
+    
+    .precio {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    footer {
+        text-align: center;
+        background: url(imgs/bg.jpg);
+        padding: 40px;
+    }
+    
+    .copyright {
+        color: white;
+        font-size: 13px;
+        margin: 20px;
+    }
+
+}
+
+
+/* Estilos para tablets y dispositivos móviles: */
+
+@media (max-width: 767px){
+
+    header {
         background-color: #BBBBBB;
         padding: 20px 0;
     }
@@ -103,14 +262,5 @@
         font-size: 13px;
         margin: 20px;
     }
-
-}
-
-
-/* Estilos para tablets y dispositivos móviles: */
-
-@media (max-width: 767px){
-
-    
 
 }
