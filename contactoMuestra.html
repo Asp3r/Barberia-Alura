@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - Barberia Alura</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    
+    <body>
+        
+        <header>
+
+            <div class="caja">
+    
+                <h1><img src="imgs/logo.png" alt="Logo de la Barberia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a>Contacto</a></li>
+                    </ul>
+                </nav>
+    
+            </div>
+    
+        </header>
+
+        <main class="mainForm">
+
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correo">e-mail</label>
+                <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" required></textarea>
+
+
+                <fieldset class="comoContactar">
+
+                    <legend>¿Como le gustaria que lo contactemos?</legend>
+
+                    <label for="radioEmail" class="input-radio">
+                        <input type="radio" name="contacto" value="email" id="radioEmail">
+                        Email
+                    </label>
+                    
+
+                    <label for="radioTelefono" class="input-radio">
+                        <input type="radio" name="contacto" value="telefono" id="radioTelefono">
+                        Telefono
+                    </label>
+                    
+
+                    <label for="radioWpp" class="input-radio">
+                        <input type="radio" name="contacto" value="whatsapp" id="radioWpp" checked>
+                        WhatsApp
+                    </label>
+
+                </fieldset>
+
+                <fieldset class="horario-atencion">
+
+                    <legend>¿En que horario prefiere ser atendido?</legend>
+                    <select name="" id="">
+
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+    
+                    </select>
+
+                </fieldset>
+
+                <label class="input-checkbox">
+                    <input type="checkbox" checked>
+                    ¿Le gustaria recibir novedades de la Barberia Alura?
+                </label>
+
+                <input type="submit" value="Enviar formulario" class="input-padron botonEnviar">
+
+            </form>
+
+            <table>
+
+                <thead>
+                    <!-- TR: Table rows (filas) -->
+                    <tr>
+
+                        <!-- TD = celdas -->
+                        <th>Dia</th>
+                        <th>Horario</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+
+                        <td>Lunes</td>
+                        <td>08:00 - 20:00</td>
+    
+                    </tr>
+                    <tr>
+    
+                        <td>Miercoles</td>
+                        <td>08:00 - 20:00</td>
+    
+                    </tr>
+                    <tr>
+    
+                        <td>Viernes</td>
+                        <td>08:00 - 20:00</td>
+    
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </main>
+
+        <footer>
+
+            <img src="imgs/logo-blanco.png" alt="Logo de la Barberia Alura">
+            <p class="copyright">&copy Copyright Barberia Alura 2020</p>
+    
+        </footer>
+
+    </body>
+</html>
