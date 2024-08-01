@@ -42,19 +42,48 @@
         <main>
 
             <div class="redes">
-                <h3>¡Contactos en nuestras redes!</h3>
+                <h3>¡Seguinos en nuestras redes!</h3>
                 <ul class="iconos-redes">
                     <li>
-                        <a href="https://www.instagram.com/"><img src="imgs/logoInstragram.png" alt="logo-ig"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="imgs/logoInstragram.png" alt="logo-ig" id="ig"></a>
                     </li>
                     <li>
-                        <a href="https://www.twitter.com/"><img src="imgs/twlogo.png" alt="logo-ig" style="width: 45px;"></a>
+                        <a href="https://www.twitter.com/" target="_blank"><img src="imgs/twlogo.png" alt="logo-ig" id="tw"></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/"><img src="imgs/fblogo.png" alt="logo-ig"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="imgs/fblogo.png" alt="logo-ig" id="fb"></a>
                     </li>
                 </ul>
             </div>
+
+            <div class="formulario">
+
+                <h3>¿Deseas un contacto mas personalizado?</h3>
+                <h4>¡Dejanos tus datos y te contactaremos a la brevedad posible!</h4>
+
+                <form>
+                    <div class="form-group">
+                        <label for="nombreapellido" class="texto-de-form">Nombre y Apellido</label>
+                        <input type="text" id="nombreapellido" class="input-padron" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo" class="texto-de-form">e-mail</label>
+                        <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje" class="texto-de-form">Estamos a tu disposición ¿en qué podemos ser útiles?</label>
+                        <textarea cols="70" rows="10" id="mensaje" required></textarea>
+                    </div>
+
+                    <div class="form-group" id="form-group-final">
+                        <input type="submit" value="Enviar formulario" class="input-padron botonEnviar">
+                    </div>
+                </form>
+
+            </div>
+            
 
         </main>
 

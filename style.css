@@ -3,6 +3,19 @@
 
 @media (min-width: 768px) {
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden; /* Esto previene el scroll horizontal */
+    }
+
     header{
         display: flex;
         justify-content:space-around;

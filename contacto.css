@@ -3,6 +3,19 @@
 
 @media (min-width: 768px){
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden; /* Esto previene el scroll horizontal */
+    }
+
     header {
         display: flex;
         flex-direction: column; /* Alinea los elementos dentro del header en una columna */
@@ -95,8 +108,8 @@
     }
 
     .redes {
-        padding-top: 2%;
-        padding-bottom: 2%;
+        padding-top: 10%;
+        padding-bottom: 5%;
         text-align: center; /* Opcional: Para centrar el contenedor */
         /* margin-bottom: 2%; */
     }
@@ -134,6 +147,120 @@
     .iconos-redes li img {
         width: 30px; /* Ajusta el tamaño de los íconos */
         height: 30px; /* Asegura que todas las imágenes tengan el mismo tamaño */
+
+        transition: all 0.3s ease; /* Transición suave para los cambios */
+    }
+
+    #tw{
+        width: 45px;
+    }
+
+    #fb{
+        width: 30px; 
+        height: 30px;
+
+    }
+
+    #ig:hover{
+        /* width: 45px;
+        height: 45px; */
+
+        transform: scale(1.50); /* Aumenta ligeramente el tamaño */
+    }
+    
+    #tw:hover{
+        /* width: 70px;
+        height: 48px; */
+
+        transform: scale(1.50); /* Aumenta ligeramente el tamaño */
+    }
+
+    #fb:hover{
+        /* width: 47px;
+        height: 47px; */
+
+        transform: scale(1.50); /* Aumenta ligeramente el tamaño */
+    }
+
+    .formulario {
+        width: 100%; /* Ajusta el ancho según tus necesidades */
+        max-width: 600px; /* Ajusta este valor si es necesario */
+        margin: 0 auto; /* Centra el formulario horizontalmente */
+
+        /* background-color: #BBBBBB; */
+        background-color: black;
+
+        text-align: center;
+    }
+
+    form{
+        padding-top: 15px;
+        padding-bottom: 40px;
+
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .formulario h3 {
+        font-family: 'Roboto', serif;
+        padding-top: 20px;
+
+        color: #BBBBBB;
+    }
+
+    .formulario h4 {
+        font-family: 'Roboto', serif;
+        color: #BBBBBB;
+    }
+
+    .texto-de-form {
+        font-family: 'Roboto', serif;
+        font-weight: bold;
+
+        color: #BBBBBB;
+    }
+
+    .form-group {
+        margin-bottom: 15px; /* Espacio entre los elementos del formulario */
+        margin-top: 15px;
+
+        text-align: center;
+    }
+
+    #form-group-final {
+        margin-bottom: 0px;
+    }
+    
+    label {
+        display: block; /* Asegura que las etiquetas ocupen toda la línea */
+        margin-bottom: 5px; /* Espacio entre la etiqueta y el input/textarea */
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%; /* Hace que los inputs y el textarea ocupen el 100% del ancho del contenedor */
+        padding: 8px; /* Ajusta el padding según tus necesidades */
+        box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
+    }
+    
+    .botonEnviar {
+        width: auto; /* Ajusta el ancho del botón si es necesario */
+        padding: 10px 20px; /* Ajusta el padding del botón según tus necesidades */
+        cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+
+        background-color: #007bff; /* Color de fondo azul */
+        color: #fff; /* Color del texto blanco */
+        border: 2px solid #007bff; /* Borde gris */
+        border-radius: 12px; /* Bordes redondeados */
+        font-size: 16px; /* Tamaño de fuente */
+
+        transition: all 0.3s ease; /* Transición suave para los cambios */
+    }
+
+    .botonEnviar:hover {
+        background-color: #0056b3; /* Tono más claro de azul */
+        transform: scale(1.05); /* Aumenta ligeramente el tamaño */
     }
     
 
@@ -251,14 +378,26 @@
         margin-top: 70px;
     }
 
+    main{
+        max-width: 100%;
+        background-color: black;
+    }
+
     .redes {
         text-align: center; /* Opcional: Para centrar el contenedor */
+        padding-top: 90px;
+        color: #BBBBBB;
+
+    }
+
+    .redes h3{
+        padding-bottom: 20px;
     }
     
     .iconos-redes {
         list-style-type: none; /* Quita los puntos de la lista */
-        padding: 0;
-        margin: 0;
+        /* padding: 0;
+        margin: 0; */
         display: flex; /* Usamos flexbox para alinear los elementos en una fila */
         justify-content: center; /* Opcional: Para centrar los elementos dentro del contenedor */
     }
@@ -270,6 +409,121 @@
     .iconos-redes li img {
         width: 30px; /* Ajusta el tamaño de los íconos */
         height: 30px; /* Asegura que todas las imágenes tengan el mismo tamaño */
+
+        transition: all 0.3s ease; /* Transición suave para los cambios */
+    }
+
+    #tw{
+        width: 45px;
+    }
+
+    #fb{
+        width: 30px; 
+        height: 30px;
+
+    }
+
+    #ig:hover{
+        /* width: 45px;
+        height: 45px; */
+
+        transform: scale(1.50); /* Aumenta ligeramente el tamaño */
+    }
+    
+    #tw:hover{
+        /* width: 70px;
+        height: 48px; */
+
+        transform: scale(1.50); /* Aumenta ligeramente el tamaño */
+    }
+
+    #fb:hover{
+        /* width: 47px;
+        height: 47px; */
+
+        transform: scale(1.50); /* Aumenta ligeramente el tamaño */
+    }
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho según tus necesidades */
+        max-width: 600px; /* Ajusta este valor si es necesario */
+        margin: 0 auto; /* Centra el formulario horizontalmente */
+
+        /* background-color: #BBBBBB; */
+        background-color: black;
+
+        text-align: center;
+    }
+
+    form{
+        padding-top: 15px;
+        padding-bottom: 40px;
+
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .formulario h3 {
+        font-family: 'Roboto', serif;
+        padding-top: 60px;
+        padding-bottom: 20px;
+
+        color: #BBBBBB;
+    }
+
+    .formulario h4 {
+        font-family: 'Roboto', serif;
+        color: #BBBBBB;
+    }
+
+    .texto-de-form {
+        font-family: 'Roboto', serif;
+        font-weight: bold;
+
+        color: #BBBBBB;
+    }
+
+    .form-group {
+        margin-bottom: 15px; /* Espacio entre los elementos del formulario */
+        margin-top: 15px;
+
+        text-align: center;
+    }
+
+    #form-group-final {
+        margin-bottom: 0px;
+    }
+    
+    label {
+        display: block; /* Asegura que las etiquetas ocupen toda la línea */
+        margin-bottom: 5px; /* Espacio entre la etiqueta y el input/textarea */
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%; /* Hace que los inputs y el textarea ocupen el 100% del ancho del contenedor */
+        padding: 8px; /* Ajusta el padding según tus necesidades */
+        box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
+    }
+    
+    .botonEnviar {
+        width: auto; /* Ajusta el ancho del botón si es necesario */
+        padding: 10px 20px; /* Ajusta el padding del botón según tus necesidades */
+        cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+
+        background-color: #007bff; /* Color de fondo azul */
+        color: #fff; /* Color del texto blanco */
+        border: 2px solid #007bff; /* Borde gris */
+        border-radius: 12px; /* Bordes redondeados */
+        font-size: 16px; /* Tamaño de fuente */
+
+        transition: all 0.3s ease; /* Transición suave para los cambios */
+    }
+
+    .botonEnviar:hover {
+        background-color: #0056b3; /* Tono más claro de azul */
+        transform: scale(1.05); /* Aumenta ligeramente el tamaño */
     }
     
 
