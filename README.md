@@ -7,7 +7,6 @@
 
 1. [Project Description](#project-description)
 2. [Tools Used](#tools-used)
-3. [Future Plans](#future-plans)
 
 ## Project Description
 
