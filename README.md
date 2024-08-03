@@ -14,6 +14,10 @@
 A landing page for a fictional barbershop created as an integration project for the "Introduction to Front-End Development" course from Alura Latam to put into practice all the 
 theoretical knowledge acquired and to demonstrate a solid understanding of the basics of HTML5 and CSS3.
 
+### Screenshots
+
+![Home Page](imgs/homepage1.png)
+
 ## Tools Used
 
 This landing page was developed using the following technologies:
