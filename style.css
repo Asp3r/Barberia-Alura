@@ -409,9 +409,11 @@
 
     .mapa p{
         color: rgb(184, 181, 181);
+        width: 90%;
         font-weight: bold;
 
         font-family: 'Noto Sans', serif;
+
     }
 
     footer{
