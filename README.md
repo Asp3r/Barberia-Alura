@@ -7,7 +7,6 @@
 
 1. [Project Description](#project-description)
 2. [Tools Used](#tools-used)
-3. [Future Plans](#future-plans)
 
 ## Project Description
 
@@ -16,7 +15,28 @@ theoretical knowledge acquired and to demonstrate a solid understanding of the b
 
 ### Screenshots
 
-![Home Page](imgs/homepage1.png)
+#### Homepage
+
+<p align="center">
+  <img src="imgs/homepage1.png" alt="Homepage 1" width="33%">
+  <img src="imgs/homepage2.png" alt="Homepage 2" width="33%">
+  <img src="imgs/homepage3.png" alt="Homepage 3" width="33%">
+</p>
+
+#### Productos (products/services)
+
+<p align="center">
+  <img src="imgs/productos1.png" alt="Productos 1" width="33%">
+  <img src="imgs/productos2.png" alt="Productos 2" width="33%">
+  <img src="imgs/productos3.png" alt="Productos 3" width="33%">
+</p>
+
+#### Contacto (contact)
+
+<p align="center">
+  <img src="imgs/contacto1.png" alt="Productos 1" width="49%">
+  <img src="imgs/contacto2.png" alt="Productos 2" width="49%">
+</p>
 
 ## Tools Used
 
